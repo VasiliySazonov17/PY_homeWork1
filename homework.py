@@ -7,22 +7,23 @@
 # - 1 -> нет
 # - 
 
-print("Input number: ")
-i = input()
-
-
 def check_weekends(x):
     weekday = ['1', '2', '3', '4', '5']
     weekends = ['6', '7']
-
-    for x in weekday[i]:
-        if x == weekday[i]:
-            print("No")
-        elif x == weekends[i]:
-            print("Yes")
-        else:
-            print("")
     
-check_weekends(i)
+    for i in weekday:
+        if x == i:
+            print("No")
+        
+    for i in weekends:
+        if x == i:
+            print("Yes")
+
+
+print("Input number: ")
+y = input()
+check_weekends(y)
+
+
 
 
