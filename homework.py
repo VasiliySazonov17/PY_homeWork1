@@ -1,19 +1,25 @@
 # Урок 1. Знакомство с Python
-# задача 1 - branch one. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-
-#  Пример:
-# - 6 -> да
-# - 7 -> да
-# - 1 -> нет
-# - 
 
 # задача 2 - branch two. Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 
+# print("Input X: ")
+# x = int(input())
+# print("Input Y: ")
+# y = int(input())
+# print("Input Z: ")
+# z = int(input())
 
-# задача 3 - branch three. Напишите программу, которая принимает на вход координаты точки (X и Y), и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
-
-# Пример:
-# - x=34; y=-30 -> 4
-# - x=2; y=4-> 1
-# - x=-34; y=-30 -> 3
+numbers = [0, 1]
+for i in numbers:
+    x = i
+    for e in numbers:
+        y = e
+        for u in numbers:
+            z = u
+            left_side = not(x or y or z)
+            right_side = not(x) and not(y) and not(z)
+            if left_side == right_side:
+                print(True)
+            else:
+                print(False)
 
